@@ -12,6 +12,9 @@ header a{
   	text-decoration: none;
   	
 }
+img{
+	border: 2px solid green;
+}
 .dropdown .dropbtn {
  	font-size: 20px; 
   	border: none;
@@ -50,14 +53,14 @@ header a:hover, .dropdown:hover .dropbtn{
 	color: yellow;
 	background-color: black;
 }
-img{
+#image img{
 	width: 24%;
 }
 .title{
 	font-size: 30px;
 	width: auto;
 	padding: 20px;
-	background-color: #ffffff;
+	background-color: #c6f1c6;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 #image{
@@ -66,6 +69,13 @@ img{
 
 
 }
+#image img:hover{
+	width: 26%;
+}
+.checked
+{
+	color: orange;
+}
 @media screen and (max-width:800px) 
 {
   header a, .dropdown-content a, .dropbtn
@@ -73,11 +83,17 @@ img{
     width:100%;
     text-align: center;
   }
-  img
+  #image{
+  	padding: auto;
+  }
+  #image img
   {
-  	width: 88%;
+  	width: 95%;
+  	position: relative;
   	display: block;
   	margin-right: auto;
   	margin-left: auto;
   }
+  #image img:hover{
+	width: 100%;
 }

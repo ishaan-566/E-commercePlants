@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" type="text/css" href="slider.css">
   <link rel="stylesheet" type="text/css" href="modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="slider.js"></script>
   <script type="text/javascript" src="modal.js"></script>
 </head>
@@ -32,53 +33,114 @@
 	<div>
 		<p class="title">Plants</p>
 		<div id="image">
-			<img src="images/bamboo.jpg" alt="bamboo">
-			<img src="images/bonsai.jpg" alt="bonsai">
-			<img src="images/cacti.jpg" alt="cacti">
-			<img src="images/flower.jpg" alt="flower">
+			<img class="imge" src="images/bamboo.jpg" alt="bamboo">
+			<img class="imge" src="images/bonsai.jpg" alt="bonsai">
+			<img class="imge" src="images/cacti.jpg" alt="cacti">
+			<img class="imge" src="images/flower.jpg" alt="flower">
 		</div>
 	</div>
 	<br><br>
 	<div class="slideshow-container" align="center">
-  		<div class="mySlides fade" style="display: inline;">
-    		<img src="images/bamboo.jpg" onclick="fun(1)">
-    	</div>
-  		<div class="mySlides fade" style="display: inline;">
-    		<img src="images/cacti.jpg" onclick="fun(2)">
-    	</div>
-  		<div class="mySlides fade">
-    		<img src="images/flower.jpg" onclick="fun(3)">
-    	</div>
-      <div class="mySlides fade">
-        <img src="images/bonsai.jpg" onclick="fun(4)">
-      </div>
-  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <br>
+    <div class="title">Slider</div>
+    <br>
+ 		<div class="mySlides fade" style="display: inline;">
+   		<img class="imge" src="images/jade.jpg" onclick="fun(1)" title="click HERE">
+   	</div>
+ 		<div class="mySlides fade" style="display: inline;">
+   		<img class="imge" src="images/money.jpg" onclick="fun(2)" title="click HERE">
+   	</div>
+ 		<div class="mySlides fade">
+   		<img class="imge" src="images/bonsi.jpg" onclick="fun(3)" title="click HERE">
+   	</div>
+    <div class="mySlides fade">
+      <img class="imge" src="images/paan.jpg" onclick="fun(4)" title="click HERE">
+    </div>
+     <div class="mySlides fade">
+      <img class="imge" src="images/sygonium.jpg" onclick="fun(5)" title="click HERE">
+    </div>
+  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
 	</div>
   <div id="myModal1" class="modal">
     <div class="modal-content">
-       <span class="close">&times;</span>
-       <p>Some text in the Modal1..</p>
+      <span class="close">&times;</span>
+      <img src="images/jade.jpg">
+      <p class="modal-text">Rolling Nature Good Luck Jade Plant In Round Dew Ceramic Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 799.00</span>
+      <span class="money">&#8377; 349.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
     </div>
  </div>
   <div id="myModal2" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-        <p>Some text in the Modal2..</p>
+      <img src="images/money.jpg">
+      <p class="modal-text">Rolling Nature Good Luck Money Plant In Brown Hexa Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 259.00</span>
+      <span class="money">&#8377; 219.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
     </div>
   </div>
   <div id="myModal3" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-        <p>Some text in the Modal3..</p>
+      <img src="images/bonsi.jpg">
+      <p class="modal-text">Floral Treasure Green Maple Bonsai Suitable Tree Seeds</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="money">&#8377; 109.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
     </div>
   </div>
   <div id="myModal4" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-        <p>Some text in the Modal4..</p>
+      <img src="images/paan.jpg">
+      <p class="modal-text">Ugaoo Betel Leaf (Magi Paan)</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 345.00</span>
+      <span class="money">&#8377; 295.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
      </div>
   </div>
+  <div id="myModal5" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/sygonium.jpg">
+      <p class="modal-text">Rolling Nature Good Luck Pink Syngonium Plant in White Square Aroez Ceramic Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 799.00</span>
+      <span class="money">&#8377; 399.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+ </div>
 <footer></footer>
 </body>
 </html>

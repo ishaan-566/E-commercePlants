@@ -2,21 +2,23 @@
     box-sizing:border-box
   }
 .slideshow-container {
-  max-width: 98%;
-  position: relative;
+  width: 98%;
+  position: absolute;
   margin: auto;
+  padding: 10px;
 }
 
 .mySlides {
     display: none;
     padding-left: 4%; 
 }
-
-/* Next & previous buttons */
+.mySlides img{
+  width: 28%;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 47%;
+  top: 55%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -29,11 +31,11 @@
 
 /* Position the "next button" to the right */
 .next {
-  right: auto;
+  right: 0%;
   border-radius: 3px 0 0 3px;
 }
 .prev {
-  left: 22%;
+  left: 0%;
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
@@ -66,5 +68,9 @@
   }
   .prev{
     left: -10px;
+  }
+  .mySlides img{
+    position: relative;
+    width: 88%
   }
 }
