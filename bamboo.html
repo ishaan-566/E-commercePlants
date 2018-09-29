@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bamboo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
+  <link rel="stylesheet" type="text/css" href="modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript">
+    var slideIndex = 1;
+    var slideIndex1 = 1;
+    showSlides(slideIndex);
+    showSlides1(slideIndex1);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1;}
+    if (n < 1) {slideIndex = slides.length;}
+    for (i = 0; i < slides.length; i++) 
+    {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "inline";
+    if (slideIndex==slides.length)
+      slideIndex=0;
+    slides[slideIndex].style.display = "inline";
+  }
+  function showSlides1(n) {
+    var i;
+    var slides1 = document.getElementsByClassName("mySlides1");
+    if (n > slides1.length) {slideIndex1 = 1;}
+    if (n < 1) {slideIndex1 = slides1.length;}
+    for (i = 0; i < slides1.length; i++) 
+    {
+      slides1[i].style.display = "none";
+    }
+    slides1[slideIndex1-1].style.display = "inline";
+    if (slideIndex1==slides1.length)
+      slideIndex1=0;
+    slides1[slideIndex1].style.display = "inline";
+  }
+  </script>
+  <script type="text/javascript" src="modal.js"></script>
+</head>
+<body>
+	<div class="slideshow-container" align="center">
+    <br>
+    <div class="title">BestSellers</div>
+    <br>
+ 		<div class="mySlides fade" style="display: inline;">
+   		<img class="imge" src="images/bamboo/bs3.jpg" onclick="fun(1)" title="Nurturing Green Lucky Bamboo Two Layer Round Glass Pot">
+   	</div>
+ 		<div class="mySlides fade" style="display: inline;">
+   		<img class="imge" src="images/bamboo/bs2.jpg" onclick="fun(2)" title="Nurturing Green Lucky Bamboo 2 Layer Big in White Ceramic Pot">
+   	</div>
+ 		<div class="mySlides fade">
+   		<img class="imge" src="images/bamboo/bs1.jpg" onclick="fun(3)" title="Ugaoo Lucky Bamboo 3 Layer Feng Shui Plant">
+   	</div>
+    <div class="mySlides fade">
+      <img class="imge" src="images/bamboo/bs4.jpg" onclick="fun(4)" title="SMZ Brandlines - 2 Layer Lucky Bamboo Indoor Plant For Feng Shui (Total About 20 Stalks)">
+    </div>
+     <div class="mySlides fade">
+      <img class="imge" src="images/bamboo/bs5.jpg" onclick="fun(5)" title="Nurturing Green Mini Delight 3-Stick Lucky Bamboo Square">
+    </div>
+  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<div id="myModal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/bs3.jpg">
+      <p class="modal-text">Nurturing Green Lucky Bamboo Two Layer Round Glass Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 399.00</span>
+      <span class="money">&#8377; 249.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+ </div>
+  <div id="myModal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/bs2.jpg">
+      <p class="modal-text">Nurturing Green Lucky Bamboo 2 Layer Big in White Ceramic Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 599.00</span>
+      <span class="money">&#8377; 249.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+  </div>
+  <div id="myModal3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/bs1.jpg">
+      <p class="modal-text">Ugaoo Lucky Bamboo 3 Layer Feng Shui Plant</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 450.00</span>
+      <span class="money">&#8377; 350.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+  </div>
+  <div id="myModal4" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/bs4.jpg">
+      <p class="modal-text">SMZ Brandlines - 2 Layer Lucky Bamboo Indoor Plant For Feng Shui (Total About 20 Stalks)</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 299.00</span>
+      <span class="money">&#8377; 157.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+     </div>
+  </div>
+  <div id="myModal5" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/bs5.jpg">
+      <p class="modal-text">Nurturing Green Mini Delight 3-Stick Lucky Bamboo Square</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 399.00</span>
+      <span class="money">&#8377; 199.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+  </div>
+  <br>
+  <div class="slideshow-container" align="center" style="top: 80%">
+    <br>
+    <div class="title">Hot new Arrivals</div>
+    <br>
+ 		<div class="mySlides1 fade" style="display: inline;">
+   		<img class="imge" src="images/bamboo/hnr3.jpg" onclick="fun(6)" title="Nurturing Green Lucky Bamboo Two Layer Round Glass Pot">
+   	</div>
+ 		<div class="mySlides1 fade" style="display: inline;">
+   		<img class="imge" src="images/bamboo/hnr2.jpg" onclick="fun(7)" title="Nurturing Green Lucky Bamboo 2 Layer Big in White Ceramic Pot">
+   	</div>
+ 		<div class="mySlides1 fade" style="display: none;">
+   		<img class="imge" src="images/bamboo/hnr1.jpg" onclick="fun(8)" title="Ugaoo Lucky Bamboo 3 Layer Feng Shui Plant">
+   	</div>
+  	<a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+  	<a class="next" onclick="plusSlides1(1)">&#10095;</a>
+	</div>
+	<div id="myModal6" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/hnr3.jpg">
+      <p class="modal-text">Nurturing Green Lucky Bamboo Two Layer Round Glass Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 399.00</span>
+      <span class="money">&#8377; 249.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+ </div>
+  <div id="myModal7" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/hnr2.jpg">
+      <p class="modal-text">Nurturing Green Lucky Bamboo 2 Layer Big in White Ceramic Pot</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 599.00</span>
+      <span class="money">&#8377; 249.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+  </div>
+  <div id="myModal8" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="images/bamboo/hnr1.jpg">
+      <p class="modal-text">Ugaoo Lucky Bamboo 3 Layer Feng Shui Plant</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <br>
+      <span class="price">&#8377; 450.00</span>
+      <span class="money">&#8377; 350.00</span>
+      <p style="font-size: 20px;"><a href="index.html" target="_blank">click here</a></p>
+    </div>
+  </div>
+</body>
+</html>

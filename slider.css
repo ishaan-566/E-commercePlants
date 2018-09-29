@@ -3,16 +3,19 @@
   }
 .slideshow-container {
   width: 98%;
-  position: absolute;
+  position: relative;
   margin: auto;
   padding: 10px;
 }
 
-.mySlides {
+.mySlides,.mySlides1 {
     display: none;
     padding-left: 4%; 
 }
 .mySlides img{
+  width: 28%;
+}
+.mySlides1 img{
   width: 28%;
 }
 .prev, .next {
@@ -70,6 +73,10 @@
     left: -10px;
   }
   .mySlides img{
+    position: relative;
+    width: 88%
+  }
+  .mySlides1 img{
     position: relative;
     width: 88%
   }

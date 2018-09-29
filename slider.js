@@ -1,8 +1,8 @@
-var slideIndex = 1;
+var slideIndex = 6;
 showSlides(slideIndex);
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(a,n) {
+  showSlides(slideIndex += n+a);
 }
 function showSlides(n) {
   var i,a;
